@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subneteo</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <div>
+        <table>
+            <tr>
+            <td>
+                <table>
+                        <tr>
+                        <td>
+                            <input type='number' id='primerEspacio' minlength=0 maxlength=3 size='1'>
+                        </td>
+                        <td>
+                            <h1>.</h1>
+                        </td>
+                        <td>
+                            <input type='number' id='segundoEspacio' minlength=0 maxlength=3 size='1'>
+                        </td>
+                        <td>
+                            <h1>.</h1>
+                        </td>
+                        <td>
+                            <input type='number' id='tercerEspacio' minlength='0' maxlength='3' size='1'>
+                        </td>
+                        <td>
+                            <h1>.</h1>
+                        </td>
+                        <td>
+                            <input type='number' id='cuartoEspacio' minlength='0' maxlength='3' size='1'>
+                        </td>
+                        </tr>
+                    </table>
+                </td>
+                <td><button onclick="ayudaPorfavorunu()">Calcular</button></td>
+                <td>
+                    <table>
+                        <tr>
+                        <td colspan="4">
+                            <label>Tipo de Red</label>
+                            <input readonly='readonly' id='claseIP' type="text" width=200px>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td colspan="4">
+                            <label>Mascara de Subred</label>
+                            <input readonly='readonly' id='mascaraSubred' type="text" width=200px>
+                        </td>
+                        </tr>
+                </table>
+            </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div>
+        <span>Escribe el numero que necesites</span>
+    </div>
+    <div>
+        <div>
+            <table>
+                    <tr>
+                    <td><input type='number' id='subredesNecesarias'></td>
+                    <td colspan="2">
+                        <label>HOST DISPONIBLE</label>
+                        <input type="text" readonly='readonly' id='hostdisponbile'>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <input value='CALCULAR' type='button' onclick="obtenerHost()">
+                    </td>
+                    <td>
+                        <label>VALOR DEL SALTO</label>
+                        <input type="text" readonly='readonly' id='salto'>
+                    </td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+    <script src="javascript/sub_bin.js"></script>
+</body>
+
+</html>
