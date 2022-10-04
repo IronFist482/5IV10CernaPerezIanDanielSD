@@ -8,7 +8,7 @@ var con=mysql.createConnection({
     host:'localhost',
     user:'root',
     password:'N0M3L0',
-    database:'03node',
+    database:'node',
 })
 
 con.connect()
@@ -30,6 +30,7 @@ app.post('/agregarUsuario',(req,res)=>{
         if(err) return console.log('Error',err)
 
         return res.send('<h3>Nombre:</h3>'+nombre)
+        return res.send('<a src='"index.html"'></a>'+nombre)
     })
 })
 
