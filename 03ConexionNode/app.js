@@ -30,7 +30,7 @@ app.post('/agregarUsuario',(req,res)=>{
         if(err) return console.log('Error',err)
 
         return res.send('<h3>Nombre:</h3>'+nombre)
-        return res.send('<a src='"index.html"'></a>'+nombre)
+        return res.send('<a src=></a>'+nombre)
     })
 })
 
@@ -55,7 +55,7 @@ app.get('/getUsuarios',(req,res)=>{
 })
 
 app.listen(3000,()=>{
-    console.log("Servidor escuchando el puerto 3000")
+    console.log("Servidor escuchando el puerto 3000 en http://localhost:3000")
 })
 /*
 npm install express --save
